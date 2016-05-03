@@ -1,0 +1,99 @@
+<html>
+<head>
+ <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+  <script>
+    $(document).ready
+      (
+        function() 
+          {
+            var socket = io.connect('http://localhost');
+            $('#button1').click
+              (
+                function(e)
+                  {
+                    socket.emit('click');
+                    e.preventDefault();
+                    console.log('button1 pressed');
+                  }
+              );
+          
+
+            $('#button2').click
+              (
+                function(e)
+                  {
+                    socket.emit('click');
+                    e.preventDefault();
+                    console.log('button2 pressed');
+                  }
+              );
+
+
+           
+            $('#button3').click
+              (
+                function(e)
+                  {
+                    socket.emit('click');
+                    e.preventDefault();
+                    console.log('button3 pressed');
+                  }
+              );
+
+
+            
+            $('#button4').click
+              (
+                function(e)
+                  {
+                    socket.emit('click');
+                    e.preventDefault();
+                    console.log('button4 pressed');
+                  }
+              );
+
+
+            
+            $('#button5').click
+              (
+                function(e)
+                  {
+                    socket.emit('click');
+                    e.preventDefault();
+                    console.log('button5 pressed');
+                  }
+              );
+
+
+            
+            $('#button6').click
+              (
+                function(e)
+                  {
+                    socket.emit('click');
+                    e.preventDefault();
+                    console.log('button6 pressed');
+                  }
+              );
+
+
+
+
+          }
+      );  
+  
+
+
+
+  </script>
+</head>
+<body>
+  <button id="button1" href="#">Led1 On/Off</button>
+  <button id="button2" href="#">Led2 On/Off</button>
+  <button id="button3" href="#">Led3 On/Off</button>
+  <button id="button4" href="#">Led4 On/Off</button>
+  <button id="button5" href="#">Led5 On/Off</button>
+  <button id="button6" href="#">Led6 On/Off</button>
+</body>
+</html>
